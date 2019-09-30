@@ -100,3 +100,16 @@ contactparagraphs.forEach((paragraph, i) => {
 // Footer
 const footer = document.querySelector('footer');
 footer.textContent = siteContent.footer.copyright;
+
+// Stretch
+const headers = document.querySelectorAll('h4');
+const links = document.querySelectorAll('a');
+
+headers.forEach(header => {
+  header.style.color = 'slategrey';
+});
+
+links.forEach(link => {
+  link.style.color = 'green';
+});
+
