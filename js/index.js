@@ -46,3 +46,11 @@ ctaImage.setAttribute('src', siteContent['cta']['img-src']);
 
 const middleImage = document.querySelector('#middle-img');
 middleImage.setAttribute('src', siteContent['main-content']['middle-img-src']);
+
+// Nav
+const navItems = document.querySelectorAll('nav a');
+const listOfnavContent = Object.values(siteContent.nav);
+
+navItems.forEach((item, i) => {
+  item.textContent = listOfnavContent[i];
+});
