@@ -71,3 +71,12 @@ const mainAboutTitle = document.querySelector('.top-content .text-content:last-o
 const mainAboutContent = document.querySelector('.top-content .text-content:last-of-type p');
 mainAboutTitle.textContent = siteContent["main-content"]["about-h4"];
 mainAboutTitle.textContent = siteContent["main-content"]["about-content"];
+
+// Bottom content
+const bottomContent = document.querySelectorAll('.bottom-content .text-content');
+bottomContent[0].children[0].textContent = siteContent["main-content"]['services-h4'];
+bottomContent[0].children[1].textContent = siteContent["main-content"]['services-content'];
+bottomContent[1].children[0].textContent = siteContent["main-content"]['product-h4'];
+bottomContent[1].children[1].textContent = siteContent["main-content"]['product-content'];
+bottomContent[2].children[0].textContent = siteContent["main-content"]['vision-h4'];
+bottomContent[2].children[1].textContent = siteContent["main-content"]['vision-content'];
