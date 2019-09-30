@@ -62,15 +62,11 @@ ctaHeader.textContent = siteContent.cta.h1;
 ctaButton.textContent = siteContent.cta.button;
 
 // Main content
-const mainFeaturesTitle = document.querySelector('.top-content .text-content:first-of-type h4');
-const mainFeaturesContent = document.querySelector('.top-content .text-content:first-of-type p');
-mainFeaturesTitle.textContent = siteContent["main-content"]["features-h4"];
-mainFeaturesTitle.textContent = siteContent["main-content"]["features-content"];
-
-const mainAboutTitle = document.querySelector('.top-content .text-content:last-of-type h4');
-const mainAboutContent = document.querySelector('.top-content .text-content:last-of-type p');
-mainAboutTitle.textContent = siteContent["main-content"]["about-h4"];
-mainAboutTitle.textContent = siteContent["main-content"]["about-content"];
+const topContent = document.querySelector('.top-content .text-content');
+topContent[0].children[0].textContent = siteContent["main-content"]["features-h4"];
+topContent[0].children[1].textContent = siteContent["main-content"]["features-content"];
+topContent[1].children[0].textContent = siteContent["main-content"]["about-h4"];
+topContent[1].children[1].textContent = siteContent["main-content"]["about-content"];
 
 // Bottom content
 const bottomContent = document.querySelectorAll('.bottom-content .text-content');
