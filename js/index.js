@@ -89,5 +89,5 @@ contactparagraphs.forEach((paragraph, i) => {
 });
 
 // Footer
-const footer = document.getElementsByClassName('footer');
+const footer = document.querySelector('footer');
 footer.textContent = siteContent.footer.copyright;
