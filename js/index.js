@@ -54,3 +54,20 @@ const listOfnavContent = Object.values(siteContent.nav);
 navItems.forEach((item, i) => {
   item.textContent = listOfnavContent[i];
 });
+
+// Cta section
+const ctaHeader = document.querySelector('.cta-text h1');
+const ctaButton = document.querySelector('.cta-text button');
+ctaHeader.textContent = siteContent.cta.h1;
+ctaButton.textContent = siteContent.cta.button;
+
+// Main content
+const mainFeaturesTitle = document.querySelector('.top-content .text-content:first-of-type h4');
+const mainFeaturesContent = document.querySelector('.top-content .text-content:first-of-type p');
+mainFeaturesTitle.textContent = siteContent["main-content"]["features-h4"];
+mainFeaturesTitle.textContent = siteContent["main-content"]["features-content"];
+
+const mainAboutTitle = document.querySelector('.top-content .text-content:last-of-type h4');
+const mainAboutContent = document.querySelector('.top-content .text-content:last-of-type p');
+mainAboutTitle.textContent = siteContent["main-content"]["about-h4"];
+mainAboutTitle.textContent = siteContent["main-content"]["about-content"];
