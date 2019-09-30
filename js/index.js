@@ -53,7 +53,16 @@ const listOfnavContent = Object.values(siteContent.nav);
 
 navItems.forEach((item, i) => {
   item.textContent = listOfnavContent[i];
+  item.style.color = 'green';
 });
+
+const nav = document.querySelector('nav');
+const newNav1 = document.createElement('a')
+const newNav2 = document.createElement('a')
+newNav1.textContent = 'Login';
+newNav2.textContent = 'Account';
+nav.prepend(newNav1);
+nav.append(newNav2);
 
 // Cta section
 const ctaHeader = document.querySelector('.cta-text h1');
