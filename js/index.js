@@ -76,3 +76,18 @@ bottomContent[1].children[0].textContent = siteContent["main-content"]['product-
 bottomContent[1].children[1].textContent = siteContent["main-content"]['product-content'];
 bottomContent[2].children[0].textContent = siteContent["main-content"]['vision-h4'];
 bottomContent[2].children[1].textContent = siteContent["main-content"]['vision-content'];
+
+// Contact
+const contactHeader = document.querySelector('.contact h4');
+contactHeader.textContent = siteContent['contact']['contact-h4'];
+
+const contactparagraphs = document.querySelectorAll('.contact p');
+const listOfContactParagraphs = Object.values(siteContent.contact);
+
+contactparagraphs.forEach((paragraph, i) => {
+  paragraph.textContent = listOfContactParagraphs[i+1];
+});
+
+// Footer
+const footer = document.getElementsByClassName('footer');
+footer.textContent = siteContent.footer.copyright;
